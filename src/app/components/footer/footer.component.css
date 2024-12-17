@@ -1,0 +1,103 @@
+/* General styles for the footer */
+.footer {
+    background-color: #333;     /* Dark background for the footer */
+    color: #fff;                /* White text */
+    padding: 20px 0;            /* Padding for the footer */
+    font-family: Arial, sans-serif; /* Font style */
+    position: relative;         /* This will be used with flexbox layout */
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;               /* Flexbox layout for content */
+    justify-content: space-between; /* Space out sections */
+    flex-wrap: wrap;             /* Allow sections to wrap on smaller screens */
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;                     /* Each section takes equal width */
+    margin: 10px;                /* Add space between sections */
+    min-width: 200px;            /* Prevent sections from shrinking too much */
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;                /* Light gray color for links */
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;                /* White on hover */
+  }
+  
+  /* Social media icons */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: #ccc;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #fff;
+    color: #333;  /* Change color on hover */
+  }
+  
+  /* Footer bottom (copyright) */
+  .footer-bottom {
+    text-align: center;            /* Centered text for the bottom section */
+    padding: 10px 0;
+    background-color: #222;        /* Darker background for the bottom */
+    margin-top: 20px;               /* Space between content and bottom */
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+    color: #bbb;                   /* Light gray for copyright text */
+  }
+  
+  /* Ensure the footer stays at the bottom of the page */
+  html, body {
+    height: 100%;                  /* Ensure the body and html take full height */
+    margin: 0;                     /* Remove default margin */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;        /* Stack content vertically */
+  }
+  
+  .main-content {
+    flex: 1;                       /* Take up remaining space */
+  }
+  
+  /* Optional: Ensure page content is below the footer when there's more content */
+  

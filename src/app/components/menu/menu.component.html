@@ -1,0 +1,72 @@
+<div class="contact-form-container">
+  <h2>Add Menu</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="contact-form">
+    <div class="form-group">
+      <label for="name">Menu Name</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        name="name" 
+        [(ngModel)]="menu.name" 
+        #name="ngModel" 
+        required 
+        minlength="3" 
+        placeholder="Enter menu name"
+      />
+      <app-form-validation [control]="name"></app-form-validation>
+    </div>
+
+    <div class="form-group">
+      <label for="ingredients">Ingredients</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        name="ingredients" 
+        [(ngModel)]="menu.ingredients" 
+        #ingredients="ngModel" 
+        required 
+        minlength="3" 
+        placeholder="Enter ingredients"
+      />
+      <app-form-validation [control]="ingredients"></app-form-validation>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        name="price" 
+        [(ngModel)]="menu.price" 
+        #price="ngModel" 
+        required 
+        placeholder="Enter price"
+      />
+      <app-form-validation [control]="price"></app-form-validation>
+    </div>
+
+    <div class="form-group">
+      <label for="imageUrl">Image URL</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        name="imageUrl" 
+        [(ngModel)]="menu.imageUrl" 
+        #imageUrl="ngModel" 
+        required 
+        placeholder="Enter image URL"
+      />
+      <app-form-validation [control]="imageUrl"></app-form-validation>
+    </div>
+
+    <div class="form-group">
+      <button 
+        type="submit" 
+        class="btn btn-primary" 
+        [disabled]="f.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

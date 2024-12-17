@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;  /* Align items to the left */
+    gap: 10px;                    /* Narrow space between the links */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;        /* Remove bullet points */
+  }
+  
+  .navbar li {
+    display: inline-block;        /* Ensures list items behave like inline elements */
+  }
+  
+  .navbar a {
+    text-decoration: none;        /* Remove underline from links */
+    padding: 10px 20px;           /* Add padding for better spacing around the link text */
+    color: #000;                  /* Set link color */
+    font-weight: bold;            /* Make the text bold */
+  }
+  
+  .navbar a:hover {
+    color: #007bff;               /* Change link color on hover */
+  }
+  

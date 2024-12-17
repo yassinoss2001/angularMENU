@@ -1,0 +1,8 @@
+<section id="menu" class="menu">
+  <h2>Latest Menus</h2>
+
+  <div class="menu-posts">
+    <!-- Loop through the menus array and display each menu using MenuDetailComponent -->
+    <app-menudetail *ngFor="let menu of menus" [menu]="menu"></app-menudetail>
+  </div>
+</section>
